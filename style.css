@@ -1,0 +1,68 @@
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 32px;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.body {
+    display: flex;
+    flex-direction: column;
+}
+
+.one {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.two {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.icons {
+    display: flex;
+    justify-content: center;
+}
+
+.icon {
+    border: 5px solid blue;
+    border-radius: 25px;
+}
+
+.three {
+    display: flex;
+    justify-content: center;
+}
+
+.four {
+    display: flex;
+    justify-content: center;
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+}
