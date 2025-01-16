@@ -1,1 +1,1 @@
-# foundations_landingpage
+I will be learning how to style and layout a landing page using flexbox and css styling foundations. # foundations_landingpage
