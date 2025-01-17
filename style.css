@@ -1,12 +1,29 @@
 body {
+    font-family: 'Roboto', sans-serif;
     display: flex;
     flex-direction: column;
+    background-color: #1f2937;
+}
+
+h1 {
+    font-size: 48px;
+    color: #f9faf8;
+    font-weight: 900;
+}
+
+h2, li {
+    font-size: 18px;
+    color: #e5e7eb;
+    font-weight: 300;
+    list-style: none;
 }
 
 .header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    width: 100%;
+    /* padding: 8px; */
 }
 
 ul {
@@ -16,9 +33,9 @@ ul {
     gap: 32px;
 }
 
-li {
+/* li {
     list-style: none;
-}
+} */
 
 a {
     text-decoration: none;
@@ -33,6 +50,8 @@ a {
     display: flex;
     justify-content: center;
     align-items: center;
+    gap: 32px;
+    flex-wrap: wrap;
 }
 
 .two {
@@ -40,6 +59,7 @@ a {
     justify-content: center;
     flex-direction: column;
     text-align: center;
+    background-color: #f9faf8;
 }
 
 .icons {
@@ -47,19 +67,23 @@ a {
     justify-content: center;
 }
 
-.icon {
-    border: 5px solid blue;
+.content {
+    border: 2px solid #3882f6;
     border-radius: 25px;
+    padding: 20px;
+    width: 120px;
 }
 
 .three {
     display: flex;
     justify-content: center;
+    background-color: #e5e7eb;
 }
 
 .four {
     display: flex;
     justify-content: center;
+    background-color: #f9faf8;
 }
 
 .footer {
