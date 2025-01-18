@@ -1,26 +1,177 @@
+/* SETTINGS */
+html {
+    --black: #333;
+    --white: #efefef;
+    --color: rgb(60, 130, 246);
+    --dark: rgb(31, 41, 55);
+    --light: lightblue;
+}
+
+
+
+/* SETUP */
 * {
     box-sizing: border-box;
 }
 
-header, footer {
-    border: 4px solid red;
-    /* min-height: 100px; */
+picture {
+    display: block;
 }
 
+img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+a {
+    display: block;
+    color: inherit;
+    text-decoration: none;
+}
+
+p a, li a, {
+    display: inline-block;
+    color: var(--color);
+    text-decoration: underline;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+
+
+/* DEV STYLES */
+/* body * {
+    border: 1px solid blue;
+    padding: 2px;
+}
+inner-column {
+    border: 8px solid orange;
+}
+graphic-diptych {
+    border: 8px solid dodgerblue;
+}
+header, footer, main {
+    border: 8px solid red;
+}
 section {
-    border: 4px solid lime;
-    /* min-height: 200px; */
-}
+    border: 8px solid lime;
+} */
 
+
+
+/* STRUCTURE */
+body {
+    /* font-family: 'Roboto', sans-serif; */
+    display: flex;
+    flex-direction: column;
+    /* background-color: #1f2937; */
+    min-height: 100vh;
+}
+main {
+    flex-grow: 1;
+}
 inner-column {
     display: block;
-    border: 4px solid orange;
+    padding: 10px;
+    width: 98%;
+    max-width: 900px;
+    margin-right: auto;
+    margin-left: auto;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+header inner-column {
     padding: 10px;
 }
 
 
 
-h1 {
+/* TYPOGRAPHY */
+.loud-voice {
+    font-family: sans-serif;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 1.9rem;
+}
+@media (min-width: 700px) {
+    .loud-voice {
+        font-size: 40px;
+    }
+}
+.calm-voice {
+    font-family: sans-serif;
+    font-size: 1rem;
+    line-height: 1.3rem;
+}
+
+
+
+/* COMPONENTS */
+.button {
+    font-family: sans-serif;
+    display: inline-block;
+    background-color: var(--color);
+    color: white;
+    font-size: 1.2rem;
+    padding: 10px 20px;
+    border-radius: 6px;
+}
+
+
+
+/* MODULES */
+graphic-diptych {
+    display: block;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+graphic-diptych picture {
+
+}
+
+graphic-diptych text-content {
+    display: block;
+}
+
+graphic-diptych text-content p {
+    margin-top: 10px;
+}
+
+graphic-diptych text-content .button {
+    margin-top: 10px;
+}
+
+@media (min-width: 700px) {
+    graphic-diptych {
+        flex-direction: row-reverse;
+    }
+    graphic-diptych is:(text-content, picture) {
+        flex-basis: 50%;
+    }
+}
+
+.welcome {
+    background-color: var(--dark);
+    color: var(--white);
+}
+
+/* .welcome .button {
+    background-color: var(--color);
+    color: var(--white);
+} */
+
+
+
+/* OLD CODE */
+/* h1 {
     font-size: 48px;
     color: #f9faf8;
     font-weight: 900;
@@ -33,21 +184,11 @@ h2, li {
     list-style: none;
 }
 
-body {
-    font-family: 'Roboto', sans-serif;
-    display: flex;
-    flex-direction: column;
-    background-color: #1f2937;
-}
-
 .header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    /* max-width: 80%; */
-    /* margin: auto; */
     padding: 8px;
-    /* gap: 48px; */
 }
 
 .logo {
@@ -60,10 +201,6 @@ ul {
     display: flex;
     gap: 32px;
 }
-
-/* li {
-    list-style: none;
-} */
 
 a {
     text-decoration: none;
@@ -119,4 +256,4 @@ a {
 .footer {
     display: flex;
     justify-content: center;
-}
+} */
